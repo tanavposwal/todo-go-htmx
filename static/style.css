@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centering the container and adding padding */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Task list styling */
+.task-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+/* Task item styling */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.task-text {
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #ff0000;
+}
+
+/* If no tasks exist */
+.no-tasks {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+}
+
+/* Form styling */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input fields for title and status */
+.task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.task-input:focus {
+    border-color: #007bff;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
